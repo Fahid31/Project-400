@@ -1,13 +1,15 @@
 import { LandingNavbar } from "@/components/landing-navbar";
 import { LandingHero } from "@/components/landing-hero";
-import { LandingContent } from "@/components/landing-content";
+import { BentoGrid } from "@/components/bento-grid";
+import Testimonials from "@/components/testimonials";
 
 const LandingPage = () => {
   return ( 
     <div className="h-full ">
       <LandingNavbar />
-      <LandingHero />
-      <LandingContent />
+			<LandingHero />
+			<BentoGrid />
+			<Testimonials />
     </div>
    );
 }
