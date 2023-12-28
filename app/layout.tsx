@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 import "./globals.css";
+import Footer from "@/components/footer";
 
 const font = Inter({ subsets: ["latin"] });
 
@@ -16,10 +17,11 @@ export default async function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-			<html lang='en' suppressHydrationWarning>
+				<html lang='en' suppressHydrationWarning>
 				<body className={font.className}>
 					
 					{children}
+					<Footer />
 				</body>
 			</html>
 	);
